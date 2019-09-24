@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <style>
+    #demo{
+        background-color: indianred;
+        color:white;
+        font-size:20px;
+        padding:40px;
+        border-radius:20px;
+    }
+    </style>
+  </head>
+  <body>
+    <button id="demo">click me</button>
+
+    <script>
+      document.getElementById("demo").addEventListener("click", changeText);
+
+
+      function changeText() {
+        document.getElementById("demo").innerHTML = "don't click me!!";
+      }
+    </script>
+  </body>
+</html>
