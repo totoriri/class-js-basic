@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+  </head>
+  <body>
+
+      <!-- // 1, let user input sequence number
+      // 2, get user input from input form to js code
+      // 3, generate fibonacci number
+      // 4, output the generated fibonacci number using "console.log();"
+   -->
+  
+
+    <input name="textbox" id="id-textbox" type="text" />
+    <input type="button" id="id-bottun" onclick="ButtonClick();" />
+
+    <p id="output"></p>
+  </body>
+
+  <script>
+    function ButtonClick() {
+      let x = document.getElementById("id-textbox").value;
+      console.log(x);
+      console.log(F(x));
+
+      document.getElementById("output").innerHTML = F(x);
+    }
+    // fibonati
+    function F(n) {
+      if (n === 0 || n === 1) {
+        return 1;
+      } else {
+        return F(n - 1) + F(n - 2);
+      }
+    }
+  </script>
+</html>
